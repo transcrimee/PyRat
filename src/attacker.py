@@ -1,4 +1,5 @@
 # Server side (attacker)
+# Copyright (c) 2026 transcrime
 import socket
 
 host = "0.0.0.0"
@@ -20,3 +21,4 @@ while True:
     print(client.recv(4096).decode())
 
 client.close()
+
