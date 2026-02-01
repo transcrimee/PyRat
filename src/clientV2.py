@@ -1,3 +1,4 @@
+# Copyright (c) 2026 transcrime
 import socket
 
 def main():
@@ -24,4 +25,5 @@ def command_console(cmd):
         return str(e)
     
 if __name__ == "__main__":
+
      main()
